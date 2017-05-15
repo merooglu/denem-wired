@@ -12,7 +12,7 @@ class MakaleViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var makale : Makale?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,15 +22,15 @@ class MakaleViewController: BaseViewController {
         tableView.tableFooterView = UIView()
 
         
-        let data = NSData(contentsOf: NSURL(string: "https://www.wired.com/2017/04/missile-defense-will-protect-south-korea-make-china-nervous/")! as URL)
-        let doc = TFHpple(htmlData: data! as Data)
-        
-        if let elements = doc?.search(withXPathQuery: "//p") as? [TFHppleElement] {
-            for element in elements{
-                print("----------")
-                print(element.content)
-            }
-        }
+//        let data = NSData(contentsOf: NSURL(string: "https://www.wired.com/2017/04/missile-defense-will-protect-south-korea-make-china-nervous/")! as URL)
+//        let doc = TFHpple(htmlData: data! as Data)
+//        
+//        if let elements = doc?.search(withXPathQuery: "//p") as? [TFHppleElement] {
+//            for element in elements{
+//                print("----------")
+//                print(element.content)
+//            }
+//        }
     }
 
     func getMakale() {

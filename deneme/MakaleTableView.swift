@@ -11,6 +11,8 @@ import UIKit
 
 extension MakaleViewController : UITableViewDelegate, UITableViewDataSource {
     
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -32,7 +34,8 @@ extension MakaleViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let cell = tableView.cellForRow(at: indexPath) as! MakaleTableViewCell
+        self.performSegue(withIdentifier: "showWebviewContent", sender: cell.makaleModel )
     }
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

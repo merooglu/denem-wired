@@ -102,7 +102,7 @@
         <!--Web View Content View Controller-->
         <scene sceneID="fi5-WI-KmG">
             <objects>
-                <viewController id="8hi-Av-uXM" customClass="WebViewContentViewController" customModule="deneme" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="8hi-Av-uXM" customClass="WebViewContentViewController" customModule="deneme" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vmL-Ut-opj"/>
                         <viewControllerLayoutGuide type="bottom" id="qMA-gW-mr0"/>
@@ -115,19 +115,78 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAZ-0v-asb" customClass="ButtonView" customModule="deneme" customModuleProvider="target">
+                                <rect key="frame" x="36" y="607" width="303" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Just Article">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="justArticleClicked:" destination="8hi-Av-uXM" eventType="touchUpInside" id="XC9-Ci-Pca"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Vzh-Lm-xFE" firstAttribute="leading" secondItem="7oB-Js-1U6" secondAttribute="leading" id="7ww-23-Gm2"/>
+                            <constraint firstItem="NAZ-0v-asb" firstAttribute="leading" secondItem="7oB-Js-1U6" secondAttribute="leadingMargin" constant="20" id="FYq-RE-aBM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NAZ-0v-asb" secondAttribute="trailing" constant="20" id="IZU-jh-N2h"/>
                             <constraint firstItem="qMA-gW-mr0" firstAttribute="top" secondItem="Vzh-Lm-xFE" secondAttribute="bottom" id="Pvu-Tp-ZRm"/>
                             <constraint firstItem="Vzh-Lm-xFE" firstAttribute="top" secondItem="vmL-Ut-opj" secondAttribute="bottom" id="fVH-5K-mzn"/>
                             <constraint firstAttribute="trailing" secondItem="Vzh-Lm-xFE" secondAttribute="trailing" id="p21-bc-EU7"/>
+                            <constraint firstItem="qMA-gW-mr0" firstAttribute="top" secondItem="NAZ-0v-asb" secondAttribute="bottom" constant="30" id="s6S-1Q-xaI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="Vzh-Lm-xFE" id="exf-fi-DjT"/>
+                        <segue destination="q7f-Wv-Oz2" kind="show" identifier="justArticle" id="Zhf-Rz-qJu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AcP-ge-hOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1930" y="105"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="5MH-ob-yrQ">
+            <objects>
+                <viewController id="q7f-Wv-Oz2" customClass="ArticleViewController" customModule="deneme" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qds-cM-pIy"/>
+                        <viewControllerLayoutGuide type="bottom" id="4En-73-21a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U8F-EH-Ka9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oK-aR-Bob">
+                                <rect key="frame" x="10" y="74" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3oK-aR-Bob" firstAttribute="top" secondItem="qds-cM-pIy" secondAttribute="bottom" constant="10" id="CEU-gN-bpB"/>
+                            <constraint firstItem="3oK-aR-Bob" firstAttribute="leading" secondItem="U8F-EH-Ka9" secondAttribute="leading" constant="10" id="Rpd-rj-8PW"/>
+                            <constraint firstAttribute="trailing" secondItem="3oK-aR-Bob" secondAttribute="trailing" constant="10" id="bGf-9Q-rdJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="articleContentLabel" destination="3oK-aR-Bob" id="NIL-DQ-vPT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7M-np-ku3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2780" y="105"/>
         </scene>
         <!--Base Navigation View Controller-->
         <scene sceneID="e75-1x-j8V">
