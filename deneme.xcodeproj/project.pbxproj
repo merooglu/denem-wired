@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BE82EC81EC8D7E600D22F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE82EC71EC8D7E600D22F50 /* AppDelegate.swift */; };
+		1BE82ECA1EC8D7E600D22F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE82EC91EC8D7E600D22F50 /* ViewController.swift */; };
+		1BE82ECD1EC8D7E600D22F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE82ECB1EC8D7E600D22F50 /* Main.storyboard */; };
+		1BE82ECF1EC8D7E600D22F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE82ECE1EC8D7E600D22F50 /* Assets.xcassets */; };
+		1BE82ED21EC8D7E600D22F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE82ED01EC8D7E600D22F50 /* LaunchScreen.storyboard */; };
+		1BE82EE01EC8D80F00D22F50 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE82EDB1EC8D80F00D22F50 /* TFHpple.m */; };
+		1BE82EE11EC8D80F00D22F50 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE82EDD1EC8D80F00D22F50 /* TFHppleElement.m */; };
+		1BE82EE21EC8D80F00D22F50 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE82EDF1EC8D80F00D22F50 /* XPathQuery.m */; };
+		1BE82EE61EC8D88300D22F50 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE82EE51EC8D88300D22F50 /* libxml2.2.tbd */; };
+		1BE82EE81EC8D88D00D22F50 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE82EE71EC8D88D00D22F50 /* libxml2.tbd */; };
+		8D38738E28EAC68BCCD07130 /* Pods_deneme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD74DBD96A4AE86256531DA /* Pods_deneme.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		164A8E2D05A67914612D61B1 /* Pods-deneme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deneme.release.xcconfig"; path = "Pods/Target Support Files/Pods-deneme/Pods-deneme.release.xcconfig"; sourceTree = "<group>"; };
+		1BE82EC41EC8D7E600D22F50 /* deneme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deneme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE82EC71EC8D7E600D22F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BE82EC91EC8D7E600D22F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BE82ECC1EC8D7E600D22F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BE82ECE1EC8D7E600D22F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BE82ED11EC8D7E600D22F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BE82ED31EC8D7E600D22F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE82ED91EC8D80E00D22F50 /* deneme-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "deneme-Bridging-Header.h"; sourceTree = "<group>"; };
+		1BE82EDA1EC8D80F00D22F50 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		1BE82EDB1EC8D80F00D22F50 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		1BE82EDC1EC8D80F00D22F50 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		1BE82EDD1EC8D80F00D22F50 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		1BE82EDE1EC8D80F00D22F50 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		1BE82EDF1EC8D80F00D22F50 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		1BE82EE51EC8D88300D22F50 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		1BE82EE71EC8D88D00D22F50 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		8DD74DBD96A4AE86256531DA /* Pods_deneme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deneme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57339BF49A7571D3122A336 /* Pods-deneme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deneme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deneme/Pods-deneme.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BE82EC11EC8D7E600D22F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE82EE81EC8D88D00D22F50 /* libxml2.tbd in Frameworks */,
+				1BE82EE61EC8D88300D22F50 /* libxml2.2.tbd in Frameworks */,
+				8D38738E28EAC68BCCD07130 /* Pods_deneme.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		065F00ECCB69F91F6FF62975 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A57339BF49A7571D3122A336 /* Pods-deneme.debug.xcconfig */,
+				164A8E2D05A67914612D61B1 /* Pods-deneme.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1BE82EBB1EC8D7E600D22F50 = {
+			isa = PBXGroup;
+			children = (
+				1BE82EC61EC8D7E600D22F50 /* deneme */,
+				1BE82EC51EC8D7E600D22F50 /* Products */,
+				1BE82EE41EC8D88300D22F50 /* Frameworks */,
+				065F00ECCB69F91F6FF62975 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		1BE82EC51EC8D7E600D22F50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BE82EC41EC8D7E600D22F50 /* deneme.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BE82EC61EC8D7E600D22F50 /* deneme */ = {
+			isa = PBXGroup;
+			children = (
+				1BE82EC71EC8D7E600D22F50 /* AppDelegate.swift */,
+				1BE82EC91EC8D7E600D22F50 /* ViewController.swift */,
+				1BE82ECB1EC8D7E600D22F50 /* Main.storyboard */,
+				1BE82ECE1EC8D7E600D22F50 /* Assets.xcassets */,
+				1BE82ED01EC8D7E600D22F50 /* LaunchScreen.storyboard */,
+				1BE82ED31EC8D7E600D22F50 /* Info.plist */,
+				1BE82EE31EC8D81900D22F50 /* tfhpple */,
+				1BE82ED91EC8D80E00D22F50 /* deneme-Bridging-Header.h */,
+			);
+			path = deneme;
+			sourceTree = "<group>";
+		};
+		1BE82EE31EC8D81900D22F50 /* tfhpple */ = {
+			isa = PBXGroup;
+			children = (
+				1BE82EDA1EC8D80F00D22F50 /* TFHpple.h */,
+				1BE82EDB1EC8D80F00D22F50 /* TFHpple.m */,
+				1BE82EDC1EC8D80F00D22F50 /* TFHppleElement.h */,
+				1BE82EDD1EC8D80F00D22F50 /* TFHppleElement.m */,
+				1BE82EDE1EC8D80F00D22F50 /* XPathQuery.h */,
+				1BE82EDF1EC8D80F00D22F50 /* XPathQuery.m */,
+			);
+			name = tfhpple;
+			sourceTree = "<group>";
+		};
+		1BE82EE41EC8D88300D22F50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BE82EE71EC8D88D00D22F50 /* libxml2.tbd */,
+				1BE82EE51EC8D88300D22F50 /* libxml2.2.tbd */,
+				8DD74DBD96A4AE86256531DA /* Pods_deneme.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BE82EC31EC8D7E600D22F50 /* deneme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BE82ED61EC8D7E600D22F50 /* Build configuration list for PBXNativeTarget "deneme" */;
+			buildPhases = (
+				57C347775DADF88F754E8B27 /* [CP] Check Pods Manifest.lock */,
+				1BE82EC01EC8D7E600D22F50 /* Sources */,
+				1BE82EC11EC8D7E600D22F50 /* Frameworks */,
+				1BE82EC21EC8D7E600D22F50 /* Resources */,
+				B9B61B8670C0B0EF874BB3EE /* [CP] Embed Pods Frameworks */,
+				CF1610928FD20DF4F50C529E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = deneme;
+			productName = deneme;
+			productReference = 1BE82EC41EC8D7E600D22F50 /* deneme.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BE82EBC1EC8D7E600D22F50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mehmet Eroğlu";
+				TargetAttributes = {
+					1BE82EC31EC8D7E600D22F50 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1BE82EBF1EC8D7E600D22F50 /* Build configuration list for PBXProject "deneme" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BE82EBB1EC8D7E600D22F50;
+			productRefGroup = 1BE82EC51EC8D7E600D22F50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BE82EC31EC8D7E600D22F50 /* deneme */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BE82EC21EC8D7E600D22F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE82ED21EC8D7E600D22F50 /* LaunchScreen.storyboard in Resources */,
+				1BE82ECF1EC8D7E600D22F50 /* Assets.xcassets in Resources */,
+				1BE82ECD1EC8D7E600D22F50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57C347775DADF88F754E8B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B61B8670C0B0EF874BB3EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deneme/Pods-deneme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF1610928FD20DF4F50C529E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deneme/Pods-deneme-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BE82EC01EC8D7E600D22F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE82EE11EC8D80F00D22F50 /* TFHppleElement.m in Sources */,
+				1BE82ECA1EC8D7E600D22F50 /* ViewController.swift in Sources */,
+				1BE82EE21EC8D80F00D22F50 /* XPathQuery.m in Sources */,
+				1BE82EE01EC8D80F00D22F50 /* TFHpple.m in Sources */,
+				1BE82EC81EC8D7E600D22F50 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BE82ECB1EC8D7E600D22F50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE82ECC1EC8D7E600D22F50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BE82ED01EC8D7E600D22F50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE82ED11EC8D7E600D22F50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BE82ED41EC8D7E600D22F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BE82ED51EC8D7E600D22F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BE82ED71EC8D7E600D22F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57339BF49A7571D3122A336 /* Pods-deneme.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = deneme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deneme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "deneme/deneme-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1BE82ED81EC8D7E600D22F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164A8E2D05A67914612D61B1 /* Pods-deneme.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = deneme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deneme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "deneme/deneme-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BE82EBF1EC8D7E600D22F50 /* Build configuration list for PBXProject "deneme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE82ED41EC8D7E600D22F50 /* Debug */,
+				1BE82ED51EC8D7E600D22F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BE82ED61EC8D7E600D22F50 /* Build configuration list for PBXNativeTarget "deneme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE82ED71EC8D7E600D22F50 /* Debug */,
+				1BE82ED81EC8D7E600D22F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BE82EBC1EC8D7E600D22F50 /* Project object */;
+}
