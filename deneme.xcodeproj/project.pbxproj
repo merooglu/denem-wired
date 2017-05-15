@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2763CF1EC988D200605855 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2763CE1EC988D200605855 /* WebService.swift */; };
+		1B2763D21EC9892700605855 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2763D11EC9892700605855 /* Error.swift */; };
+		1B2763D41EC98A0800605855 /* Makale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2763D31EC98A0800605855 /* Makale.swift */; };
+		1B2763D61EC98A9100605855 /* MakaleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2763D51EC98A9100605855 /* MakaleModel.swift */; };
+		1B2763D91EC98DE500605855 /* MakaleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2763D81EC98DE500605855 /* MakaleTableView.swift */; };
+		1B2763DB1EC98E1300605855 /* MakaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2763DA1EC98E1300605855 /* MakaleTableViewCell.swift */; };
+		1B2763E01EC99D4800605855 /* WebViewContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2763DF1EC99D4800605855 /* WebViewContentViewController.swift */; };
+		1BBB17401EC954E6007671C4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB173F1EC954E6007671C4 /* BaseViewController.swift */; };
+		1BBB17421EC9550F007671C4 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB17411EC9550F007671C4 /* BaseNavigationViewController.swift */; };
 		1BE82EC81EC8D7E600D22F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE82EC71EC8D7E600D22F50 /* AppDelegate.swift */; };
-		1BE82ECA1EC8D7E600D22F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE82EC91EC8D7E600D22F50 /* ViewController.swift */; };
+		1BE82ECA1EC8D7E600D22F50 /* MakaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE82EC91EC8D7E600D22F50 /* MakaleViewController.swift */; };
 		1BE82ECD1EC8D7E600D22F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE82ECB1EC8D7E600D22F50 /* Main.storyboard */; };
 		1BE82ECF1EC8D7E600D22F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE82ECE1EC8D7E600D22F50 /* Assets.xcassets */; };
 		1BE82ED21EC8D7E600D22F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE82ED01EC8D7E600D22F50 /* LaunchScreen.storyboard */; };
@@ -22,9 +31,18 @@
 
 /* Begin PBXFileReference section */
 		164A8E2D05A67914612D61B1 /* Pods-deneme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deneme.release.xcconfig"; path = "Pods/Target Support Files/Pods-deneme/Pods-deneme.release.xcconfig"; sourceTree = "<group>"; };
+		1B2763CE1EC988D200605855 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		1B2763D11EC9892700605855 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		1B2763D31EC98A0800605855 /* Makale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Makale.swift; sourceTree = "<group>"; };
+		1B2763D51EC98A9100605855 /* MakaleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakaleModel.swift; sourceTree = "<group>"; };
+		1B2763D81EC98DE500605855 /* MakaleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakaleTableView.swift; sourceTree = "<group>"; };
+		1B2763DA1EC98E1300605855 /* MakaleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakaleTableViewCell.swift; sourceTree = "<group>"; };
+		1B2763DF1EC99D4800605855 /* WebViewContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewContentViewController.swift; sourceTree = "<group>"; };
+		1BBB173F1EC954E6007671C4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1BBB17411EC9550F007671C4 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		1BE82EC41EC8D7E600D22F50 /* deneme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deneme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE82EC71EC8D7E600D22F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BE82EC91EC8D7E600D22F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BE82EC91EC8D7E600D22F50 /* MakaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakaleViewController.swift; sourceTree = "<group>"; };
 		1BE82ECC1EC8D7E600D22F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BE82ECE1EC8D7E600D22F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BE82ED11EC8D7E600D22F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +83,52 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1B2763CD1EC9888F00605855 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				1B2763CE1EC988D200605855 /* WebService.swift */,
+				1B2763D01EC9891700605855 /* Modal */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+		1B2763D01EC9891700605855 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				1B2763D11EC9892700605855 /* Error.swift */,
+				1B2763D31EC98A0800605855 /* Makale.swift */,
+				1B2763D51EC98A9100605855 /* MakaleModel.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		1B2763D71EC98D4900605855 /* Makale */ = {
+			isa = PBXGroup;
+			children = (
+				1BE82EC91EC8D7E600D22F50 /* MakaleViewController.swift */,
+				1B2763D81EC98DE500605855 /* MakaleTableView.swift */,
+				1B2763DA1EC98E1300605855 /* MakaleTableViewCell.swift */,
+			);
+			name = Makale;
+			sourceTree = "<group>";
+		};
+		1B2763DC1EC99CD800605855 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				1B2763DF1EC99D4800605855 /* WebViewContentViewController.swift */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+		1BBB173E1EC954C7007671C4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1BBB173F1EC954E6007671C4 /* BaseViewController.swift */,
+				1BBB17411EC9550F007671C4 /* BaseNavigationViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		1BE82EBB1EC8D7E600D22F50 = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				1BE82EC71EC8D7E600D22F50 /* AppDelegate.swift */,
-				1BE82EC91EC8D7E600D22F50 /* ViewController.swift */,
+				1BBB173E1EC954C7007671C4 /* Base */,
+				1B2763CD1EC9888F00605855 /* WebService */,
+				1B2763D71EC98D4900605855 /* Makale */,
+				1B2763DC1EC99CD800605855 /* Content */,
 				1BE82ECB1EC8D7E600D22F50 /* Main.storyboard */,
 				1BE82ECE1EC8D7E600D22F50 /* Assets.xcassets */,
 				1BE82ED01EC8D7E600D22F50 /* LaunchScreen.storyboard */,
@@ -246,10 +313,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE82EE11EC8D80F00D22F50 /* TFHppleElement.m in Sources */,
-				1BE82ECA1EC8D7E600D22F50 /* ViewController.swift in Sources */,
+				1BE82ECA1EC8D7E600D22F50 /* MakaleViewController.swift in Sources */,
+				1B2763CF1EC988D200605855 /* WebService.swift in Sources */,
 				1BE82EE21EC8D80F00D22F50 /* XPathQuery.m in Sources */,
 				1BE82EE01EC8D80F00D22F50 /* TFHpple.m in Sources */,
+				1B2763D61EC98A9100605855 /* MakaleModel.swift in Sources */,
+				1B2763D91EC98DE500605855 /* MakaleTableView.swift in Sources */,
 				1BE82EC81EC8D7E600D22F50 /* AppDelegate.swift in Sources */,
+				1B2763E01EC99D4800605855 /* WebViewContentViewController.swift in Sources */,
+				1BBB17421EC9550F007671C4 /* BaseNavigationViewController.swift in Sources */,
+				1B2763D21EC9892700605855 /* Error.swift in Sources */,
+				1B2763D41EC98A0800605855 /* Makale.swift in Sources */,
+				1BBB17401EC954E6007671C4 /* BaseViewController.swift in Sources */,
+				1B2763DB1EC98E1300605855 /* MakaleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
