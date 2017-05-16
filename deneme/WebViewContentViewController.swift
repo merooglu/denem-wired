@@ -15,7 +15,7 @@ class WebViewContentViewController : BaseViewController, UIWebViewDelegate {
     @IBOutlet weak var contentTextView: UITextView!
     
     var webviewContent : MakaleModel!
-    
+    var wordArray: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,17 +30,17 @@ class WebViewContentViewController : BaseViewController, UIWebViewDelegate {
         
     }
     
-    @IBAction func justArticleClicked(_ sender: Any) {
-        self.performSegue(withIdentifier: "justArticle", sender: nil)
-    }
-    
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "justArticle" {
-            let newVC = segue.destination as! ArticleViewController
-            newVC.articleContent = sender as? MakaleModel
-        }
-    }
+//    @IBAction func justArticleClicked(_ sender: Any) {
+//        self.performSegue(withIdentifier: "justArticle", sender: nil)
+//    }
+//    
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "justArticle" {
+//            let newVC = segue.destination as! ArticleViewController
+//            newVC.articleContent = sender as? MakaleModel
+//        }
+//    }
 
     
     
@@ -59,7 +59,7 @@ class WebViewContentViewController : BaseViewController, UIWebViewDelegate {
             
         }
         wordCount(s: "\(contentTextView.text)")
-
+        
     }
    
     
@@ -72,17 +72,49 @@ class WebViewContentViewController : BaseViewController, UIWebViewDelegate {
                 wordDictionary[word] = 1
             } else {
                 wordDictionary.updateValue(wordDictionary[word]! + 1, forKey: word)
-               // print("\(wordDictionary[word]!)")
+               wordArray.append(word)
+                // print("\(wordDictionary[word]!)")
             }
         }
         
         for (kelime, sayi) in wordDictionary {
             print("\(kelime): \(sayi)")
         }
-       
+       mostCommomWord(array: wordArray)
         return wordDictionary
     }
 
+    
+    func mostCommomWord(array: [String]) -> String {
+       
+        var wordCountDictionary = [String: Int]()
+        
+        for word in array {
+            if let count = wordCountDictionary[word] {
+                wordCountDictionary[word] = count + 1
+            }else {
+                wordCountDictionary[word] = 1
+            }
+        }
+        
+        var mostCommonWord = ""
+        
+        for key in wordCountDictionary.keys{
+            if mostCommonWord == "" {
+                mostCommonWord = key
+            }else {
+                let count = wordCountDictionary[key]
+                if count! > wordCountDictionary[mostCommonWord]! {
+                    mostCommonWord = key
+                }
+            }
+            print("\(key): \(wordCountDictionary[key]!)")
+        }
+        
+        print("\(mostCommonWord)")
+        print("\(wordCountDictionary[mostCommonWord]!+1)")
+        return mostCommonWord
+    }
     
     
 }
