@@ -112,47 +112,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzh-Lm-xFE">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="433"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAZ-0v-asb" customClass="ButtonView" customModule="deneme" customModuleProvider="target">
-                                <rect key="frame" x="36" y="607" width="303" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Just Article">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="justArticleClicked:" destination="8hi-Av-uXM" eventType="touchUpInside" id="XC9-Ci-Pca"/>
-                                </connections>
-                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UyX-BH-UQ6">
+                                <rect key="frame" x="26" y="497" width="323" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Vzh-Lm-xFE" firstAttribute="leading" secondItem="7oB-Js-1U6" secondAttribute="leading" id="7ww-23-Gm2"/>
-                            <constraint firstItem="NAZ-0v-asb" firstAttribute="leading" secondItem="7oB-Js-1U6" secondAttribute="leadingMargin" constant="20" id="FYq-RE-aBM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NAZ-0v-asb" secondAttribute="trailing" constant="20" id="IZU-jh-N2h"/>
-                            <constraint firstItem="qMA-gW-mr0" firstAttribute="top" secondItem="Vzh-Lm-xFE" secondAttribute="bottom" id="Pvu-Tp-ZRm"/>
+                            <constraint firstItem="qMA-gW-mr0" firstAttribute="top" secondItem="Vzh-Lm-xFE" secondAttribute="bottom" constant="170" id="Pvu-Tp-ZRm"/>
+                            <constraint firstItem="UyX-BH-UQ6" firstAttribute="top" secondItem="Vzh-Lm-xFE" secondAttribute="bottom" id="bn3-Vn-qCY"/>
+                            <constraint firstItem="UyX-BH-UQ6" firstAttribute="leading" secondItem="7oB-Js-1U6" secondAttribute="leadingMargin" constant="10" id="drY-GX-Hjz"/>
                             <constraint firstItem="Vzh-Lm-xFE" firstAttribute="top" secondItem="vmL-Ut-opj" secondAttribute="bottom" id="fVH-5K-mzn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UyX-BH-UQ6" secondAttribute="trailing" constant="10" id="hBo-iY-QAi"/>
                             <constraint firstAttribute="trailing" secondItem="Vzh-Lm-xFE" secondAttribute="trailing" id="p21-bc-EU7"/>
-                            <constraint firstItem="qMA-gW-mr0" firstAttribute="top" secondItem="NAZ-0v-asb" secondAttribute="bottom" constant="30" id="s6S-1Q-xaI"/>
+                            <constraint firstItem="qMA-gW-mr0" firstAttribute="top" secondItem="UyX-BH-UQ6" secondAttribute="bottom" id="voH-VW-QUl"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="contentTextView" destination="UyX-BH-UQ6" id="Y4p-vf-6Yw"/>
                         <outlet property="webView" destination="Vzh-Lm-xFE" id="exf-fi-DjT"/>
-                        <segue destination="q7f-Wv-Oz2" kind="show" identifier="justArticle" id="Zhf-Rz-qJu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AcP-ge-hOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="105"/>
+            <point key="canvasLocation" x="1928.8" y="104.7976011994003"/>
         </scene>
         <!--Article View Controller-->
         <scene sceneID="5MH-ob-yrQ">
